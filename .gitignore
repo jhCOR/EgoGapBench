@@ -1,0 +1,20 @@
+# Images are fetched by Data/data_prepare/download_image.py, not committed.
+Data/images/**
+!Data/images/*/
+!Data/images/*/CREDITS.json
+
+# COCO annotation archives, if a user points --coco-ann-dir inside the repo
+Data/annotations/
+
+# Secrets — never commit. SetUp/.env.example is the tracked template.
+SetUp/.env
+SECRETE/
+*.key
+
+# Eval outputs
+Result/
+
+__pycache__/
+*.py[cod]
+.venv/
+.env
